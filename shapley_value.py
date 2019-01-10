@@ -88,10 +88,10 @@ def find_Shapley():
     try:
         for i in range(1, 5):
             if not X[i - 1] >= v({i}):
-                raise Exception('Не выполняется')
+                raise Exception('Dont')
         print('The condition of individual rationalization is ok')
     except Exception as e:
-        if str(e) == 'Не выполняется':
+        if str(e) == 'Dont':
             print('The condition of individual rationalization is not ok')
                     
 if __name__ == "__main__":
